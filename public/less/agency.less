@@ -156,12 +156,16 @@ h1, h2, h3, h4, h5, h6 {
 
 // Navbar Change on Scroll
 
-@media(min-width:768px) {
+@media(min-width:767px) {
     .navbar-custom.affix {
         background-color: @gray-darker;
-        padding: 10px 0;
+        padding: 20px 0 10px 0;
         .navbar-brand {
-            font-size: 1.5em;
+            font-size: 1.7em;
+        }
+        .logo{
+            width: 65px;
+            height: 65px;
         }
     }
 }
@@ -735,4 +739,34 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @theme-primary;
+}
+
+.logo{
+    width: 140px;
+    height: 140px;
+    float: left;
+    margin: -24px 10px 0 30px;
+    transition-duration: 0.3s;
+}
+
+@media(max-width:767px) {
+    .logo{
+        width: 50px;
+        height: 50px;
+        margin: -12px 0 0 0;
+    }
+}
+
+@media(width:768px) {
+    .navbar-custom.affix {
+        background-color: @gray-darker;
+        padding: 20px 0 10px 0;
+        .navbar-brand {
+            font-size: 1.7em;
+        }
+        .logo{
+            width: 65px;
+            height: 65px;
+        }
+    }
 }
